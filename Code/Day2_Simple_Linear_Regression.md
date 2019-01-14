@@ -22,7 +22,7 @@ X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size = 1/4, rand
 
 # Step 2: Fitting Simple Linear Regression Model to the training set
  ```python
- from sklearn.linear_model import LinearRegression
+ from sklearn.linear_model import LinearRegression // from sklearn.model_selection import train_test_split
  regressor = LinearRegression()
  regressor = regressor.fit(X_train, Y_train)
  ```
