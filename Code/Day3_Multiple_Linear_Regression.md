@@ -22,7 +22,7 @@ Y = dataset.iloc[ : ,  4 ].values
 
 ### Encoding Categorical data
 ```python
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder # comment 1 
 labelencoder = LabelEncoder()
 X[: , 3] = labelencoder.fit_transform(X[ : , 3])
 onehotencoder = OneHotEncoder(categorical_features = [3])
